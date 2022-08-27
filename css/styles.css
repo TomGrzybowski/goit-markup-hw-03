@@ -59,7 +59,6 @@ body {
 
 .agencja-h1 {
   width: 696px;
-  height: 120px;
 
   font-weight: 900;
   font-size: 44px;
@@ -210,10 +209,15 @@ body {
 
 .agencja-scope-list {
   list-style-type: none;
-  display: flex;
-  gap: 30px;
-  margin-left: 215px;
   margin-top: 50px;
+}
+
+.agencja-scope-list > li {
+  display: inline;
+  margin-left: 30px;
+}
+.agencja-scope-list > li:first-child {
+  margin-left: 215px;
 }
 
 .agencja-scope-img {
