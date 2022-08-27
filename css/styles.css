@@ -13,9 +13,37 @@ body {
   font-family: "Roboto";
   color: var(--main-font-color);
 }
-.top-header {
+
+.agencja-header > .container {
   width: 1600px;
   height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #757575;
+}
+
+main > .container > .agencja-title {
+  width: 1600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container > .logo_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: teal;
+  margin-left: 215px;
+}
+
+.container > .contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: orange;
 }
 
 .agencja-h1 {
@@ -23,8 +51,8 @@ body {
   height: 120px;
 
   font-weight: 900;
-  font-size: 2.75em;
-  line-height: 60px;
+  font-size: 44px;
+  line-height: 1.5;
 
   text-align: center;
   letter-spacing: 0.06em;
@@ -43,7 +71,6 @@ body {
 
   color: var(--white-color);
   font-weight: 700;
-  line-height: 30px;
 
   align-items: center;
   text-align: center;
@@ -68,8 +95,7 @@ body {
   font-family: "Raleway";
   text-decoration: none;
   font-weight: 700;
-  font-size: 1.625em;
-  line-height: 31px;
+  font-size: 26px;
   letter-spacing: 0.03em;
   color: var(--black-color);
 }
@@ -101,8 +127,7 @@ body {
 .navigation-current {
   text-decoration: none;
   font-weight: 500;
-  font-size: 0.875em;
-  line-height: 16px;
+  font-size: 14px;
   letter-spacing: 0.02em;
   color: var(--company-blue);
 }
@@ -110,7 +135,7 @@ body {
 .navigation-link {
   text-decoration: none;
   font-weight: 500;
-  font-size: 0.875em;
+  font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
 
@@ -125,8 +150,7 @@ body {
   height: 16px;
 
   font-weight: 500;
-  font-size: 0.875em;
-  line-height: 16px;
+  font-size: 14px;
   letter-spacing: 0.02em;
 }
 
@@ -146,8 +170,7 @@ body {
   height: 16px;
 
   font-weight: 500;
-  font-size: 0.875em;
-  line-height: 16px;
+  font-size: 14px;
   letter-spacing: 0.02em;
 }
 
@@ -167,8 +190,7 @@ body {
   height: 16px;
 
   font-weight: 700;
-  font-size: 0.875em;
-  line-height: 16px;
+  font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
@@ -179,74 +201,8 @@ body {
   height: 75px;
 
   font-weight: 400;
-  font-size: 0.875em;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-}
-.agencja-content-header-2 {
-  width: 270px;
-  height: 16px;
-
-  font-weight: 700;
-  font-size: 0.875em;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: var(--dark-font-color);
-}
-
-.agencja-content-p-2 {
-  width: 270px;
-  height: 75px;
-
-  font-weight: 400;
-  font-size: 0.875em;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-}
-.agencja-content-header-3 {
-  width: 270px;
-  height: 16px;
-
-  font-weight: 700;
-  font-size: 0.875em;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: var(--dark-font-color);
-}
-
-.agencja-content-p-3 {
-  width: 270px;
-  height: 75px;
-
-  font-weight: 400;
-  font-size: 0.875em;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-}
-.agencja-content-header-4 {
-  width: 270px;
-  height: 16px;
-
-  font-weight: 700;
-  font-size: 0.875em;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: var(--dark-font-color);
-}
-
-.agencja-content-p-4 {
-  width: 270px;
-  height: 75px;
-
-  font-weight: 400;
-  font-size: 0.875em;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 1.5;
   letter-spacing: 0.03em;
 }
 
@@ -255,8 +211,7 @@ body {
   height: 42px;
 
   font-weight: 700;
-  font-size: 2.25em;
-  line-height: 42px;
+  font-size: 36px;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -297,8 +252,7 @@ body {
   height: 42px;
 
   font-weight: 700;
-  font-size: 2.25em;
-  line-height: 42px;
+  font-size: 36px;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -335,7 +289,6 @@ body {
   height: 19px;
 
   font-weight: 500;
-  line-height: 19px;
 
   text-align: center;
   letter-spacing: 0.03em;
@@ -348,76 +301,6 @@ body {
   height: 19px;
 
   font-weight: 400;
-  line-height: 19px;
-
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-.agencja-team-name2 {
-  width: 72px;
-  height: 19px;
-
-  font-weight: 500;
-  line-height: 19px;
-
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--dark-font-color);
-}
-
-.agencja-team-job2 {
-  width: 130px;
-  height: 19px;
-
-  font-weight: 400;
-  line-height: 19px;
-
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-.agencja-team-name3 {
-  width: 72px;
-  height: 19px;
-
-  font-weight: 500;
-  line-height: 19px;
-
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--dark-font-color);
-}
-
-.agencja-team-job3 {
-  width: 130px;
-  height: 19px;
-
-  font-weight: 400;
-  line-height: 19px;
-
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-.agencja-team-name4 {
-  width: 72px;
-  height: 19px;
-
-  font-weight: 500;
-  line-height: 19px;
-
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: var(--dark-font-color);
-}
-
-.agencja-team-job4 {
-  width: 130px;
-  height: 19px;
-
-  font-weight: 400;
-  line-height: 19px;
 
   text-align: center;
   letter-spacing: 0.03em;
@@ -436,8 +319,7 @@ body {
 
   text-decoration: none;
   font-weight: 700;
-  font-size: 1.625em;
-  line-height: 31px;
+  font-size: 26px;
   letter-spacing: 0.03em;
   color: var(--white-color);
 }
@@ -451,8 +333,7 @@ body {
   height: 21px;
 
   font-weight: 400;
-  font-size: 0.875em;
-  line-height: 24px;
+  font-size: 14px;
 
   letter-spacing: 0.03em;
 
@@ -467,8 +348,7 @@ body {
   height: 16px;
 
   font-weight: 500;
-  font-size: 0.875em;
-  line-height: 16px;
+  font-size: 14px;
   letter-spacing: 0.02em;
 }
 
@@ -488,8 +368,7 @@ body {
   height: 16px;
 
   font-weight: 500;
-  font-size: 0.875em;
-  line-height: 16px;
+  font-size: 14px;
   letter-spacing: 0.02em;
 }
 
@@ -522,8 +401,7 @@ body {
   height: 21px;
 
   font-weight: 400;
-  font-size: 0.875em;
-  line-height: 24px;
+  font-size: 14px;
 
   letter-spacing: 0.03em;
 
@@ -548,7 +426,6 @@ body {
   border-radius: 4px;
 
   font-weight: 500;
-  line-height: 26px;
 
   text-align: center;
   letter-spacing: 0.03em;
@@ -566,145 +443,6 @@ body {
   border-radius: 4px;
 
   font-weight: 500;
-  line-height: 26px;
-
-  text-align: center;
-  letter-spacing: 0.03em;
-  border: none;
-  cursor: pointer;
-  color: var(--white-color);
-}
-
-.portfolio-buttons-2 {
-  width: 93px;
-  height: 38px;
-
-  background: var(--light-background-color);
-  border-radius: 4px;
-
-  font-weight: 500;
-  line-height: 26px;
-
-  text-align: center;
-  letter-spacing: 0.03em;
-  border: none;
-
-  color: var(--dark-font-color);
-}
-
-.portfolio-buttons-2:hover,
-.portfolio-buttons-2:focus {
-  background: var(--company-blue);
-
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-
-  font-weight: 500;
-  line-height: 26px;
-
-  text-align: center;
-  letter-spacing: 0.03em;
-  border: none;
-  cursor: pointer;
-  color: var(--white-color);
-}
-.portfolio-buttons-3 {
-  width: 114px;
-  height: 38px;
-
-  background: var(--light-background-color);
-  border-radius: 4px;
-
-  font-weight: 500;
-  line-height: 26px;
-
-  text-align: center;
-  letter-spacing: 0.03em;
-  border: none;
-
-  color: var(--dark-font-color);
-}
-
-.portfolio-buttons-3:hover,
-.portfolio-buttons-3:focus {
-  background: var(--company-blue);
-
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-
-  font-weight: 500;
-  line-height: 26px;
-
-  text-align: center;
-  letter-spacing: 0.03em;
-  border: none;
-  cursor: pointer;
-  color: var(--white-color);
-}
-.portfolio-buttons-4 {
-  width: 91px;
-  height: 38px;
-
-  background: var(--light-background-color);
-  border-radius: 4px;
-
-  font-weight: 500;
-  line-height: 26px;
-
-  text-align: center;
-  letter-spacing: 0.03em;
-  border: none;
-
-  color: var(--dark-font-color);
-}
-
-.portfolio-buttons-4:hover,
-.portfolio-buttons-4:focus {
-  background: var(--company-blue);
-
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-
-  font-weight: 500;
-  line-height: 26px;
-
-  text-align: center;
-  letter-spacing: 0.03em;
-  border: none;
-  cursor: pointer;
-  color: var(--white-color);
-}
-.portfolio-buttons-5 {
-  width: 121px;
-  height: 38px;
-
-  background: var(--light-background-color);
-  border-radius: 4px;
-
-  font-weight: 500;
-  line-height: 26px;
-
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  border: none;
-
-  color: var(--dark-font-color);
-}
-
-.portfolio-buttons-5:hover,
-.portfolio-buttons-5:focus {
-  background: var(--company-blue);
-
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-
-  font-weight: 500;
-  line-height: 26px;
 
   text-align: center;
   letter-spacing: 0.03em;
@@ -729,8 +467,7 @@ body {
   height: 36px;
 
   font-weight: 700;
-  font-size: 1.125em;
-  line-height: 36px;
+  font-size: 18px;
 
   letter-spacing: 0.06em;
 
@@ -742,247 +479,6 @@ body {
   height: 30px;
 
   font-weight: 400;
-  line-height: 30px;
-
-  letter-spacing: 0.03em;
-}
-
-.portfolio-img-2 {
-  width: 370px;
-  height: 404px;
-
-  border: 1px solid var(--list-border-color);
-}
-
-.portfolio-name-2 {
-  width: 322px;
-  height: 36px;
-
-  font-weight: 700;
-  font-size: 1.125em;
-  line-height: 36px;
-
-  letter-spacing: 0.06em;
-
-  color: var(--dark-font-color);
-}
-
-.portfolio-tag-2 {
-  width: 322px;
-  height: 30px;
-
-  font-weight: 400;
-  line-height: 30px;
-
-  letter-spacing: 0.03em;
-}
-
-.portfolio-img-3 {
-  width: 370px;
-  height: 404px;
-
-  border: 1px solid var(--list-border-color);
-}
-
-.portfolio-name-3 {
-  width: 322px;
-  height: 36px;
-
-  font-weight: 700;
-  font-size: 1.125em;
-  line-height: 36px;
-
-  letter-spacing: 0.06em;
-
-  color: var(--dark-font-color);
-}
-
-.portfolio-tag-3 {
-  width: 322px;
-  height: 30px;
-
-  font-weight: 400;
-  line-height: 30px;
-
-  letter-spacing: 0.03em;
-}
-
-.portfolio-img-4 {
-  width: 370px;
-  height: 404px;
-
-  border: 1px solid var(--list-border-color);
-}
-
-.portfolio-name-4 {
-  width: 322px;
-  height: 36px;
-
-  font-weight: 700;
-  font-size: 1.125em;
-  line-height: 36px;
-
-  letter-spacing: 0.06em;
-
-  color: var(--dark-font-color);
-}
-
-.portfolio-tag-4 {
-  width: 322px;
-  height: 30px;
-
-  font-weight: 400;
-  line-height: 30px;
-
-  letter-spacing: 0.03em;
-}
-
-.portfolio-img-5 {
-  width: 370px;
-  height: 404px;
-
-  border: 1px solid var(--list-border-color);
-}
-
-.portfolio-name-5 {
-  width: 322px;
-  height: 36px;
-
-  font-weight: 700;
-  font-size: 1.125em;
-  line-height: 36px;
-
-  letter-spacing: 0.06em;
-
-  color: var(--dark-font-color);
-}
-
-.portfolio-tag-5 {
-  width: 322px;
-  height: 30px;
-
-  font-weight: 400;
-  line-height: 30px;
-
-  letter-spacing: 0.03em;
-}
-
-.portfolio-img-6 {
-  width: 370px;
-  height: 404px;
-
-  border: 1px solid var(--list-border-color);
-}
-
-.portfolio-name-6 {
-  width: 322px;
-  height: 36px;
-
-  font-weight: 700;
-  font-size: 1.125em;
-  line-height: 36px;
-
-  letter-spacing: 0.06em;
-
-  color: var(--dark-font-color);
-}
-
-.portfolio-tag-6 {
-  width: 322px;
-  height: 30px;
-
-  font-weight: 400;
-  line-height: 30px;
-
-  letter-spacing: 0.03em;
-}
-
-.portfolio-img-7 {
-  width: 370px;
-  height: 404px;
-
-  border: 1px solid var(--list-border-color);
-}
-
-.portfolio-name-7 {
-  width: 322px;
-  height: 36px;
-
-  font-weight: 700;
-  font-size: 1.125em;
-  line-height: 36px;
-
-  letter-spacing: 0.06em;
-
-  color: var(--dark-font-color);
-}
-
-.portfolio-tag-7 {
-  width: 322px;
-  height: 30px;
-
-  font-weight: 400;
-  line-height: 30px;
-
-  letter-spacing: 0.03em;
-}
-
-.portfolio-img-8 {
-  width: 370px;
-  height: 404px;
-
-  border: 1px solid var(--list-border-color);
-}
-
-.portfolio-name-8 {
-  width: 322px;
-  height: 36px;
-
-  font-weight: 700;
-  font-size: 1.125em;
-  line-height: 36px;
-
-  letter-spacing: 0.06em;
-
-  color: var(--dark-font-color);
-}
-
-.portfolio-tag-8 {
-  width: 322px;
-  height: 30px;
-
-  font-weight: 400;
-  line-height: 30px;
-
-  letter-spacing: 0.03em;
-}
-
-.portfolio-img-9 {
-  width: 370px;
-  height: 404px;
-
-  border: 1px solid var(--list-border-color);
-}
-
-.portfolio-name-9 {
-  width: 322px;
-  height: 36px;
-
-  font-weight: 700;
-  font-size: 1.125em;
-  line-height: 36px;
-
-  letter-spacing: 0.06em;
-
-  color: var(--dark-font-color);
-}
-
-.portfolio-tag-9 {
-  width: 322px;
-  height: 30px;
-
-  font-weight: 400;
-  line-height: 30px;
 
   letter-spacing: 0.03em;
 }
