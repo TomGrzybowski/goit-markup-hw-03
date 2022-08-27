@@ -7,6 +7,7 @@
   --list-border-color: #eeeeee;
   --white-color: #ffffff;
   --black-color: #000000;
+  --header-border: #ececec;
 }
 
 body {
@@ -14,36 +15,46 @@ body {
   color: var(--main-font-color);
 }
 
-.agencja-header > .container {
+.container {
   width: 1600px;
+}
+
+.header > .container {
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #757575;
+
+  /* background-color: #757575; */
+}
+.header {
+  border-bottom: 1px solid var(--header-border);
 }
 
-main > .container > .agencja-title {
-  width: 1600px;
+.agencja-title {
+  height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: var(--dark-background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.container > .logo_nav {
+.logo_nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: teal;
+
   margin-left: 215px;
 }
 
-.container > .contact {
+.contact {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: orange;
+  margin-right: 227px;
 }
 
 .agencja-h1 {
@@ -52,7 +63,7 @@ main > .container > .agencja-title {
 
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.5;
+  line-height: 1.36;
 
   text-align: center;
   letter-spacing: 0.06em;
@@ -81,17 +92,7 @@ main > .container > .agencja-title {
   cursor: pointer;
 }
 
-.agencja-title {
-  width: 1600px;
-  height: 600px;
-
-  background: var(--dark-background-color);
-}
-
 .webstudio {
-  width: 145px;
-  height: 31px;
-
   font-family: "Raleway";
   text-decoration: none;
   font-weight: 700;
@@ -104,24 +105,9 @@ main > .container > .agencja-title {
   color: var(--company-blue);
 }
 
-.nav-list-1 {
-  width: 53px;
-  height: 16px;
-}
-
-/* Here I didn't know how to use % values so I used px */
-.nav-list-2 {
-  width: 51px;
-  height: 16px;
-}
-
-.nav-list-3 {
-  width: 51px;
-  height: 16px;
-}
-
 .navigation > li {
   display: inline;
+  margin: 0 40px;
 }
 
 .navigation-current {
@@ -136,7 +122,6 @@ main > .container > .agencja-title {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
   letter-spacing: 0.02em;
 
   color: var(--dark-font-color);
@@ -145,9 +130,7 @@ main > .container > .agencja-title {
 .contact-mail-1 {
   text-decoration: none;
   color: var(--mian-font-color);
-
-  width: 135px;
-  height: 16px;
+  margin-right: 50px;
 
   font-weight: 500;
   font-size: 14px;
@@ -166,9 +149,6 @@ main > .container > .agencja-title {
   text-decoration: none;
   color: var(--mian-font-color);
 
-  width: 110px;
-  height: 16px;
-
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -182,13 +162,22 @@ main > .container > .agencja-title {
   color: var(--company-blue);
 }
 
+.agencja-content {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .agencja-content-list {
   list-style-type: none;
 }
-.agencja-content-header-1 {
-  width: 270px;
-  height: 16px;
 
+.agencja-content > ul {
+  display: flex;
+  gap: 30px;
+  margin-left: 215px;
+}
+
+.agencja-content-header {
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -196,9 +185,8 @@ main > .container > .agencja-title {
 
   color: var(--dark-font-color);
 }
-.agencja-content-p-1 {
+.agencja-content-p {
   width: 270px;
-  height: 75px;
 
   font-weight: 400;
   font-size: 14px;
@@ -206,10 +194,12 @@ main > .container > .agencja-title {
   letter-spacing: 0.03em;
 }
 
-.agencja-scope-header {
-  width: 354px;
-  height: 42px;
+.agencja-scope {
+  padding-bottom: 94px;
+}
 
+.agencja-scope-header {
+  margin: auto;
   font-weight: 700;
   font-size: 36px;
   text-align: center;
@@ -220,74 +210,50 @@ main > .container > .agencja-title {
 
 .agencja-scope-list {
   list-style-type: none;
+  display: flex;
+  gap: 30px;
+  margin-left: 215px;
+  margin-top: 50px;
 }
 
-.agencja-scope-img1 {
-  width: 370px;
-  height: 294px;
-}
-
-.agencja-scope-img2 {
-  width: 370px;
-  height: 294px;
-}
-
-.agencja-scope-img3 {
+.agencja-scope-img {
   width: 370px;
   height: 294px;
 }
 
 .agencja-team {
-  width: 1600px;
   height: 648px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 
   background: var(--light-background-color);
 }
 
 .agencja-team-list {
   list-style-type: none;
+  display: flex;
+  gap: 30px;
+  margin-left: 215px;
+  margin-top: 50px;
 }
-.agencja-team-header {
-  width: 214px;
-  height: 42px;
 
+.agencja-team-header {
+  margin: auto;
   font-weight: 700;
   font-size: 36px;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: var(--dark-font-color);
 }
 
-.agencja-team-img1 {
-  width: 270px;
-  height: 368px;
-
-  background: var(--white-color);
-}
-.agencja-team-img2 {
-  width: 270px;
-  height: 368px;
-
-  background: var(--white-color);
-}
-.agencja-team-img3 {
-  width: 270px;
-  height: 368px;
-
-  background: var(--white-color);
-}
-.agencja-team-img4 {
+.agencja-team-img {
   width: 270px;
   height: 368px;
 
   background: var(--white-color);
 }
 
-.agencja-team-name1 {
-  width: 72px;
-  height: 19px;
-
+.agencja-team-name {
   font-weight: 500;
 
   text-align: center;
@@ -296,42 +262,46 @@ main > .container > .agencja-title {
   color: var(--dark-font-color);
 }
 
-.agencja-team-job1 {
-  width: 130px;
-  height: 19px;
-
+.agencja-team-job {
   font-weight: 400;
 
   text-align: center;
   letter-spacing: 0.03em;
 }
 
-.agencja-footer {
-  width: 1600px;
+.footer {
   height: 252px;
 
   background: var(--dark-background-color);
 }
 
-.webstudio-footer {
-  width: 145px;
-  height: 31px;
+.footer > .container > * {
+  margin-left: 215px;
+}
 
+.footer > .container {
+  padding-top: 60px;
+}
+
+.webstudio-footer {
   text-decoration: none;
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
+  margin-bottom: 20px;
   color: var(--white-color);
 }
 
-.agencja-footer-list {
+.footer-list {
   list-style-type: none;
+  padding-inline-start: 0px;
 }
 
-.agencja-footer-address {
-  width: 246px;
-  height: 21px;
+.footer-list > li {
+  margin: 10px 0;
+}
 
+.footer-address {
   font-weight: 400;
   font-size: 14px;
 
@@ -343,9 +313,6 @@ main > .container > .agencja-title {
 .contact-mail-2 {
   text-decoration: none;
   color: var(--mian-font-color);
-
-  width: 135px;
-  height: 16px;
 
   font-weight: 500;
   font-size: 14px;
@@ -364,9 +331,6 @@ main > .container > .agencja-title {
   text-decoration: none;
   color: var(--mian-font-color);
 
-  width: 110px;
-  height: 16px;
-
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -380,45 +344,26 @@ main > .container > .agencja-title {
   color: var(--company-blue);
 }
 
-.portfolio-header {
-  width: 1600px;
-  height: 80px;
-}
-
-.portfolio-footer {
-  width: 1600px;
-  height: 252px;
-
-  background: var(--dark-background-color);
-}
-
-.portfolio-footer-list {
-  list-style-type: none;
-}
-
-.portfolio-footer-address {
-  width: 246px;
-  height: 21px;
-
-  font-weight: 400;
-  font-size: 14px;
-
-  letter-spacing: 0.03em;
-
-  color: var(--white-color);
-}
-.portfolio-stripe {
-  width: 1600px;
-  height: 0px;
-
-  border: 1px solid #ececec;
+.portfolio-main {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .portfolio-buttons-list {
   list-style-type: none;
+  justify-content: center;
+  padding-inline-start: 0;
+  margin-bottom: 50px;
+}
+.portfolio-buttons-list > li {
+  display: inline;
+  margin-left: 8px;
+}
+.portfolio-buttons-list > li:first-child {
+  margin-left: 510px;
 }
 
-.portfolio-buttons-1 {
+.portfolio-buttons {
   width: 121px;
   height: 38px;
 
@@ -434,8 +379,8 @@ main > .container > .agencja-title {
   color: var(--dark-font-color);
 }
 
-.portfolio-buttons-1:hover,
-.portfolio-buttons-1:focus {
+.portfolio-buttons:hover,
+.portfolio-buttons:focus {
   background: var(--company-blue);
 
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -453,32 +398,32 @@ main > .container > .agencja-title {
 
 .portfolio-items-list {
   list-style-type: none;
+  padding-inline-start: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-left: 215px;
 }
 
-.portfolio-img-1 {
+.portfolio-img {
   width: 370px;
   height: 404px;
 
   border: 1px solid var(--list-border-color);
 }
 
-.portfolio-name-1 {
-  width: 322px;
-  height: 36px;
-
+.portfolio-name {
   font-weight: 700;
   font-size: 18px;
+  margin: 20px 0px 8px 24px;
 
   letter-spacing: 0.06em;
 
   color: var(--dark-font-color);
 }
 
-.portfolio-tag-1 {
-  width: 322px;
-  height: 30px;
-
+.portfolio-tag {
   font-weight: 400;
-
+  margin-left: 24px;
   letter-spacing: 0.03em;
 }
