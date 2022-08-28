@@ -17,6 +17,7 @@ body {
 
 .container {
   width: 1600px;
+  margin: 0 auto;
 }
 
 .header > .container {
@@ -31,7 +32,7 @@ body {
   border-bottom: 1px solid var(--header-border);
 }
 
-.agencja-title {
+.agencja-title > .container{
   height: 600px;
   display: flex;
   align-items: center;
@@ -170,7 +171,7 @@ body {
   list-style-type: none;
 }
 
-.agencja-content > ul {
+.agencja-content > .container > ul {
   display: flex;
   gap: 30px;
   margin-left: 215px;
